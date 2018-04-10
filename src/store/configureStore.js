@@ -26,27 +26,11 @@ const composeEnhancers =
       },
 		}) : compose;
 
-// import 'redux-devtools-extension' call:
-// const composeEnhancers = composeWithDevTools({ actionCreators });
 
 const enhancers = composeEnhancers(
     applyMiddleware(thunkMiddleware)
   )
 
-// export default function configureStore(preloadedState) {
-//   // const composeEnhancers = composeWithDevTools({ actionCreators });
-//   const store = createStore(App, preloadedState, enhancers);
-
-//   if (module.hot) {
-//     // Enable Webpack hot module replacement for reducers
-//     module.hot.accept('../reducers', () => {
-//       const nextReducer = require('../reducers');
-//       store.replaceReducer(nextReducer);
-//     });
-//   }
-
-//   return store;
-// }
 const configureStore = preloadedState => createStore(
 	App,
 	preloadedState,

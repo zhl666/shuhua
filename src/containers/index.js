@@ -17,10 +17,10 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.handleFilterClick = this.handleFilterClick.bind(this)
-		this.state = {
-			a: 1,
-			b: 2
-		}
+		// this.state = {
+		// 	a: 1,
+		// 	b: 2
+		// }
 	}
 
 	componentDidMount() {
